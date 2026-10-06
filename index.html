@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nadji Mega Bookshop</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9fafb;
+            color: #333;
+        }
+        header {
+            background-color: #ffffff;
+            padding: 20px 40px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo {
+            max-height: 80px;
+        }
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            background-color: #eef2ff;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            color: #1e3a8a;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            color: #4b5563;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 40px 20px;
+        }
+        .product-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            overflow: hidden;
+            width: 300px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+        .product-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        .product-info {
+            padding: 20px;
+        }
+        .product-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin: 0 0 10px 0;
+        }
+        footer {
+            background-color: #1f2937;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="brand/nadji-logo.png" alt="Nadji Mega Bookshop Logo" class="logo">
+        <nav>
+            <strong style="color: #1e3a8a;">Nadji Mega Bookshop</strong>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h1>Welcome to Nadji Mega Bookshop</h1>
+        <p>Your ultimate destination for books, stationary, and more!</p>
+    </div>
+
+    <div class="gallery">
+        <div class="product-card">
+            <img src="cahier_notes_cuir_1789920764041.jpg" alt="Cahier de notes en cuir">
+            <div class="product-info">
+                <h3 class="product-title">Leather Notebook</h3>
+                <p>Premium quality notebook for your thoughts.</p>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="pack_feutres_copic_1789920748150.jpg" alt="Pack de feutres Copic">
+            <div class="product-info">
+                <h3 class="product-title">Copic Markers Pack</h3>
+                <p>Professional quality markers for artists.</p>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="sac_a_dos_kaya_1789920728851.jpg" alt="Sac à dos Kaya">
+            <div class="product-info">
+                <h3 class="product-title">Kaya Backpack</h3>
+                <p>Durable and stylish backpack for school or work.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Nadji Mega Bookshop. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
