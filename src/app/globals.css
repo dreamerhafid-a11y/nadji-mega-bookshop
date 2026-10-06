@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Nunito", system-ui, sans-serif;
+  --font-heading: "Outfit", system-ui, sans-serif;
+  
+  /* Switched to Kaya Pink */
+  --color-cyan: #FF2A70;
+  --color-cyan-50: #FFF0F4;
+  --color-cyan-100: #FFD6E3;
+  --color-cyan-600: #E61A5C;
+  --color-cyan-700: #B31045;
+  
+  --color-ink: #080808;
+  --color-orange: #6C5CE7; /* Purple accent */
+  --color-surface: #F8F9FA;
+  --color-line: #E2E8F0;
+  --color-slate: #64748B;
+  --color-slate-300: #CBD5E1;
+
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-2xl: 1.5rem;
+  --radius-3xl: 2rem;
+}
+
+@layer base {
+  body {
+    @apply bg-surface text-ink font-sans antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading tracking-tight;
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full;
+  }
+  
+  .btn-friendly {
+    @apply font-bold rounded-2xl transition-all duration-300 active:scale-95;
+  }
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
